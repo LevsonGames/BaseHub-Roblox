@@ -1153,7 +1153,9 @@ Section3:NewButton("Mega Miners", "Enable aurofarm", function()
     end
 
 end)
-
+Section3:NewButton("Natural Disaster Survival", "Enable autofarm", function()
+    loadstring(game:HttpGet(('https://pastebin.com/raw/fLATz9Sc')))()
+end)
 local Tab4 = Window:NewTab("Other")
 local Section4 = Tab4:NewSection("Other")
 Section4:NewButton("Cmds", "Enable Cmds", function()
