@@ -1162,9 +1162,14 @@ end)
 Section3:NewButton("Build a boat for treasure", "Enable autofarm", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/WADwbF6W"))()
 end)
-Section3:NewButton("Car Crushers 2", "Enable autofarm", function()
-    loadstring(game:HttpGet("https://pastebin.com/raw/U6Me6evZ"))()
+Section3:NewButton("Click to get bigger", "Enable autofarm", function()
+    repeat
+    wait(0.01)
+    game:GetService("ReplicatedStorage").RemoteEvents.AddPoints:FireServer()
+    game:GetService("ReplicatedStorage").RemoteEvents.Prestige:FireServer()
+    until nil
 end)
+
 local Tab4 = Window:NewTab("Other")
 local Section4 = Tab4:NewSection("Other")
 Section4:NewButton("Cmds", "Enable Cmds", function()
