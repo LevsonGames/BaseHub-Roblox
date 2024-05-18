@@ -11,7 +11,7 @@ local colors = {
 	-- Цвет фона у кнопок
     ElementColor = Color3.fromRGB(20, 20, 20)
 }
-local Window = Library.CreateLib("Name", colors)
+local Window = Library.CreateLib("LevsonGames_Hacks", colors)
 local Tab1 = Window:NewTab("Character")
 local Section1 = Tab1:NewSection("Character options")
 Section1:NewTextBox("Speed", "Change speed", function(txt)
